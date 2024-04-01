@@ -1,0 +1,132 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #1381ca;
+    color: #fff;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+section {
+    padding: 20px;
+}
+
+/* Estilos para el botón de búsqueda */
+#busqueda {
+    margin-bottom: 20px; 
+}
+
+/* Estilos para las tarjetas de estudiantes */
+.contenedor-tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.estudiante, .estudiante-detalles {
+    width: calc(33.33% - 10px); /* Ajuste para tres columnas */
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.estudiante img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.estudiante-info {
+    padding: 10px;
+}
+
+.estudiante h3 {
+    margin: 0;
+}
+
+.estudiante button {
+    width: 100%;
+    padding: 10px;
+    background-color: #6f00ff;
+    color: #fff;
+    border: none;
+    border-top: 1px solid #fff;
+    cursor: pointer;
+}
+
+.estudiante button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para los detalles de los estudiantes seleccionados */
+#detalles-estudiante {
+    display: none;
+    padding: 20px;
+}
+
+.estudiante-detalles {
+    background-color: #f9f9f9;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.estudiante-detalles h3 {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.estudiante-detalles p {
+    margin: 0 0 10px 0;
+    color: #666;
+}
+
+.estudiante-detalles ul {
+    margin: 0;
+    padding: 0;
+}
+
+.estudiante-detalles ul li {
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+/* Estilos para el footer */
+footer {
+    background-color: #fafdff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 2px;
+    border: solid black;
+}
+
+.registro img {
+    width: 50px;
+    height: 50px;
+}
+
+.contacto p {
+    margin: 2;
+}
+
+@media screen and (max-width: 768px) {
+    .estudiante, .estudiante-detalles {
+        width: calc(50% - 20px); /* Dos columnas en pantallas medianas */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .estudiante, .estudiante-detalles {
+        width: 100%; /* Una columna en pantallas pequeñas */
+    }
+}
